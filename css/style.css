@@ -15,3 +15,6 @@
 
 /* BIKES */
 @import './bikes/bikes-list.css';
+
+/* INSURANCES */
+@import './insurances/insurances.css';
