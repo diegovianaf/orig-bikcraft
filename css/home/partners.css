@@ -22,7 +22,7 @@
 }
 
 .partners img {
-  margin: auto;
+  margin: auto; /* so funciona com display flex ou grid */
 }
 
 .partners li:first-child,
@@ -32,21 +32,29 @@
 
 .partners li:nth-child(n + 5) {
   border-top: 2px solid var(--color-2);
-}
+} /* a partir do 5 */
 
 @media (max-width: 800px) {
   .partners {
     padding-bottom: 60px;
   }
+
   .partners h2 {
     margin-bottom: 20px;
   }
+
   .partners ul {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .partners li {
+    padding: 20px;
+  }
+
   .partners li:nth-child(n + 3) {
     border-top: 2px solid var(--color-2);
   }
+  
   .partners li:nth-child(odd) {
     border-left: none;
   }

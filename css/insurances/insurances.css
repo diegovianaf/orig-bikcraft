@@ -46,6 +46,7 @@
 .insurances-item li + li {
   margin-top: 20px;
 }
+/* li seguido de li */
 
 .insurances-item li::before {
   content: '';
@@ -59,7 +60,7 @@
 
 .insurances-item a {
   grid-column: 1 / -1;
-  /* solution for the expanding issue -> max-width: max-content; */
+  /* solution for the expanding issue -> max-width: max-content -> components.css; */
 }
 
 @media (max-width: 800px) {
