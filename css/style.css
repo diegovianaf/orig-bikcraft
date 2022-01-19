@@ -33,6 +33,7 @@
 /* CONTACT */
 @import "./contact/contact.css";
 @import "./contact/stores.css";
+@import "./quotation/quotation.css";
 
 /* TERMS */
 @import "./terms/terms.css";
