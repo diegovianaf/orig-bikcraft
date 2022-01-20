@@ -173,4 +173,21 @@
   .quotation-product {
     grid-template-columns: 1fr;
   }
+  .quotation-details {
+    grid-template-columns: 1fr;
+  }
+  .quotation-details ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .quotation-details li img {
+    margin-right: 4px;
+  }
+}
+
+@media (max-width: 360px) {
+  .quotation-details ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
