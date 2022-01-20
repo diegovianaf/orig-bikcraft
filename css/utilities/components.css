@@ -84,6 +84,10 @@
   background: var(--color-11);
 }
 
+.title {
+  background: url('../../img/decoration/top-right.svg') no-repeat top right 20px;
+}
+
 .title p {
   margin-bottom: 4px;
 }
