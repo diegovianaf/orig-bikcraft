@@ -26,3 +26,24 @@ function activateProduct(parameter) {
 }
 
 parameters.forEach(activateProduct)
+
+
+// faq
+
+const faq = document.querySelectorAll('.faq button')
+
+function activateQuestion(event) {
+  const question = event.currentTarget
+  const controls = question.getAttribute('aria-controls')
+  const answer = document.getElementById(controls)
+
+  answer.classList.toggle('active')
+  const active = answer.classList.contains('active')
+  question.setAttribute('aria-expanded', active)
+}
+
+function faqEvents(question) {
+  question.addEventListener('click', activateQuestion)
+}
+
+faq.forEach(faqEvents)
