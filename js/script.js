@@ -47,3 +47,24 @@ function faqEvents(question) {
 }
 
 faq.forEach(faqEvents)
+
+
+// bikes gallery
+
+const gallery = document.querySelectorAll('.bike-images img')
+
+const galleryContainer = document.querySelector('.bike-images')
+
+function changePicture(event) {
+  const img = event.currentTarget
+  const media = matchMedia('(min-width: 937px)').matches
+  if (media) {
+    galleryContainer.prepend(img)
+  }
+}
+
+function galleryEvents (img) {
+  img.addEventListener('click', changePicture)
+}
+
+gallery.forEach(galleryEvents)
